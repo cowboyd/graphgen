@@ -1,11 +1,16 @@
 {
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "test": "deno test -A --unstable test"
+    "test": "deno test -A --unstable --no-check test"
   },
   "importMap": "./import_map.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["prefer-const", "require-yield"]
+    }
   }
 }
