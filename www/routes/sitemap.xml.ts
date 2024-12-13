@@ -10,9 +10,9 @@ export const handler: Handlers = {
     );
     let paths = Object.entries(docs).flatMap(([topic, collection]) => {
       if ("pages" in collection) {
-        return collection.pages.map(([id]) => `${topic}/${id}`);
+        return collection.pages.map(([id]) => `docs/${topic}/${id}`);
       } else {
-        return topic;
+        return `docs/${topic}`;
       }
     });
 
