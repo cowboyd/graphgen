@@ -66,8 +66,7 @@ export default function DocsPage(props: PageProps<Data>) {
     <>
       <Head>
         <title>{props.data.page?.title ?? "Not Found"} | graphgen docs</title>
-        <base href={props.data.base ?? "/"} />
-        <link rel="stylesheet" href={`gfm.css?build=${__FRSH_BUILD_ID}`} />
+        <link rel="stylesheet" href={`/gfm.css?build=${BUILD_ID}`} />
         {description && <meta name="description" content={description} />}
       </Head>
       <div class="flex flex-col min-h-screen">

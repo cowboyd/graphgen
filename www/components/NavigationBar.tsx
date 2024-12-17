@@ -6,7 +6,7 @@ export default function NavigationBar(
   const items = [
     {
       name: "Docs",
-      href: "docs/introduction",
+      href: "/docs/introduction",
     },
     {
       name: "Discord",
@@ -15,7 +15,7 @@ export default function NavigationBar(
   ];
   const isHome = props.active == "/";
   return (
-    <nav class={"flex " + props.class ?? ""}>
+    <nav class={"flex " + (props.class ?? "")}>
       <ul class="flex justify-center items-center gap-4 mx-4 my-6 flex-wrap">
         {items.map((item) => (
           <li>

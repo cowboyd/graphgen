@@ -27,7 +27,7 @@ export function SidebarCategory(props: {
 
   return (
     <li class="my-2 block">
-      <a href={href} class={outerLink}>{title}</a>
+      <a href={`/${href}`} class={outerLink}>{title}</a>
       {entries.length > 0 && (
         <ol class="pl-4 list-decimal nested">
           {entries.map((entry) => (
@@ -49,7 +49,7 @@ export function SidebarEntry(props: {
 
   return (
     <li class="my-0.5">
-      <a href={href} class={innerLink}>{title}</a>
+      <a href={`/${href}`} class={innerLink}>{title}</a>
     </li>
   );
 }
