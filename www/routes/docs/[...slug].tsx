@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { BUILD_ID } from "$fresh/src/runtime/build_id.ts";
 import { frontMatter, gfm } from "../../utils/markdown.ts";
 
 import Header from "../../components/Header.tsx";
