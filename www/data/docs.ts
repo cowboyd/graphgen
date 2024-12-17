@@ -1,4 +1,4 @@
-import RAW_TOC from "../docs/toc.json" assert { type: "json" };
+import RAW_TOC from "../docs/toc.json" with { type: "json" };
 
 type RawTableOfContents = Record<string, RawTableOfContentsEntry>;
 
